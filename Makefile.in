@@ -1,0 +1,10 @@
+.PHONY: all install
+
+DESTDIR := ""
+PREFIX := "@prefix@"
+
+all:
+	@echo "Nothing to do."
+install:
+	install -d $(DESTDIR)$(PREFIX)/bin/
+	install -m 755 bin/* $(DESTDIR)$(PREFIX)/bin/
